@@ -99,7 +99,7 @@ class Login extends Component{
         if(this.state.typeSelected==='Student'){
             // *----------- CHANGE WITH DJANGO SERVER ---------------*
 
-            let login = await Axios.get('https://smileyfacebc.herokuapp.com/user_auth/',{
+            let login = await Axios.get('https://cscigpu04.bc.edu:7000/user_auth/',{
                 username:this.state.studentEmail.toLowerCase().trim(),
                 password:this.state.studentPassword
             })
